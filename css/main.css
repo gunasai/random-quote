@@ -1,0 +1,67 @@
+body {
+    font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+	color: #47cf73;
+    text-align: center;
+    background-color: #47cf73;
+}
+
+h1.title {
+    color: #fff;
+    font-size: 4rem;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+div.card {
+    max-width: 70%;
+    background: #fff;
+    border-radius: 0.285em;
+    box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
+	margin: 45px auto;
+}
+
+h2.quote {
+    margin: 40px;
+    padding: 20px;
+}
+
+i.fa-quote-left {
+    margin: 10px;
+}
+
+div.buttons {
+    font-size: 2rem;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.quotation, div.buttons {
+    margin: 0 auto;
+    width: 75%;
+}
+
+div.author {
+    display: flex;
+    justify-content: end;
+
+}
+
+button {
+    padding: 5px;
+    border-radius: 0.285em;
+    box-shadow: 0 0.1em 0 0 rgba(0,0,0,0.1);
+    background-color: #47cf73;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button:focus {
+    outline: none;
+}
