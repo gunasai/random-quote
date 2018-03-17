@@ -11,6 +11,15 @@ body {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
 h1.title {
     color: #fff;
     font-size: 4rem;
@@ -27,10 +36,6 @@ div.card {
     flex-direction: column;
 }
 
-h2.quote {
-
-}
-
 i.fa-quote-left {
     margin: 10px;
     font-size: 3rem;
@@ -45,6 +50,11 @@ div.buttons {
     justify-content: space-between;
     flex: 1;
 
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.9;
 }
 
 div.quotation {

@@ -2,6 +2,8 @@ $(document).ready(function() {
 
     var colors = ["#16a085", "#27ae60", "#2c3e50", "#f39c12", "#e74c3c", "#9b59b6", "#FB6964", "#342224", "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
 
+    var quote = '';
+    var author = '';
     getQuote();
 
     function getQuote() {
@@ -20,8 +22,8 @@ $(document).ready(function() {
 
         function displayQuote(response) {
             // console.log(data.quoteText);
-            var quote = response.quoteText;
-            var author = response.quoteAuthor;
+            quote = response.quoteText;
+            author = response.quoteAuthor;
 
             // console.log(quote);
             
@@ -40,6 +42,10 @@ $(document).ready(function() {
         $(".fa-quote-left").css("color", colors[color]);
         $(".icons").css("color", colors[color]);
         getQuote();
+    });
+
+    $("#tweet-quote").on("click", function() {
+        $(this).attr("href", 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + quote + '" ' + author))
     });
     
 });
