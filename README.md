@@ -1,2 +1,4 @@
-# random-quote
-Random Quote Generator
+# Random Quote Generator App
+
+[View the App](https://www.gunasai.github.io/random-quote)
+
